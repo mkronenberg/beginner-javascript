@@ -13,22 +13,44 @@
   <div class="wrapper">
     <div class="tabs">
       <div role="tablist" aria-label="Programming Languages">
-        <button role="tab" aria-selected="true" id="js">
+        <button 
+          role="tab" 
+          aria-selected="true"
+          aria-controls="panel-1"
+          id="js">
           JavaScript
         </button>
-        <button role="tab" aria-selected="false" id="ruby">Ruby
+        <button 
+          role="tab" 
+          aria-selected="false"
+          aria-controls="panel-2"
+          id="ruby">
+          Ruby
         </button>
-        <button role="tab" aria-selected="false" id="php">
+        <button 
+          role="tab" 
+          aria-selected="false" 
+          aria-controls="panel-3"
+          id="php">
           PHP
         </button>
       </div>
-      <div role="tabpanel" aria-labelledby="js">
+      <div 
+        id="panel-1"
+        role="tabpanel" 
+        aria-labelledby="js">
         <p>JavaScript is great!</p>
       </div>
-      <div role="tabpanel" aria-labelledby="ruby" hidden>
+      <div 
+        id="panel-2"
+        role="tabpanel" 
+        aria-labelledby="ruby" hidden>
         <p>Ruby is great</p>
       </div>
-      <div role="tabpanel" aria-labelledby="php" hidden>
+      <div 
+        id="panel-3"
+        role="tabpanel" 
+        aria-labelledby="php" hidden>
         <p>PHP is great!</p>
       </div>
     </div>
